@@ -1,0 +1,16 @@
+- hosts: monitoring
+  become: true
+  tasks:
+    - name: Pull jenkins image from Docker Hub
+      docker_image:
+        name: jenkins/jenkins
+        source: pull
+
+    - name: Run Jenkins on Docker
+      docker_container:
+        name: jenkins
+        image: jenkins/jenkins
+        state: started
+        restart_policy: always
+        ports:
+          - "8080:8080"

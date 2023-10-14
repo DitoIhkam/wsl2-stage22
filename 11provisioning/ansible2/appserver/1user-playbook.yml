@@ -1,0 +1,23 @@
+- name: "Configure [appserver]"
+  hosts: all
+  become: true
+  gather_facts: false
+
+  tasks:
+    # Tugas 1: Membuat user baru dan menambahkan kunci SSH
+    - name: "Create new user"
+      user:
+        name: ditoihkamp
+        groups: sudo
+        append: yes
+        state: present
+        shell: /bin/bash
+        system: no
+        createhome: yes
+        home: /home/ditoihkamp
+
+    - name: "Copy public key for new user"
+      authorized_key:
+        user: ditoihkamp
+        key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present

@@ -1,0 +1,36 @@
+---
+- name: Copy SSH key to remote server and set permissions
+  hosts: appserver
+  become: true
+
+  tasks:
+
+    - name: Copy Dockerfile to fe-dumbemerch
+      copy:
+        src: /home/ditoihkam/ansible/Dockerfe
+        dest: /home/ditoihkam/fe-dumbmerch/Dockerfile
+
+    - name: Copy Jenkinsfile to fe-dumbemerch
+      copy:
+        src: /home/ditoihkam/ansible/Jenkinsfe
+        dest: /home/ditoihkam/fe-dumbmerch/Jenkinsfile
+
+    - name: Copy .env to fe-dumbmerch
+      copy:
+        src: /home/ditoihkam/ansible/.fenv
+        dest: /home/ditoihkam/fe-dumbmerch/.env
+
+    - name: Copy Dockerfile to be-dumbemerch
+      copy:
+        src: /home/ditoihkam/ansible/Dockerbe
+        dest: /home/ditoihkam/be-dumbmerch/Dockerfile
+
+    - name: Copy Jenkinsfile to be-dumbemerch
+      copy:
+        src: /home/ditoihkam/ansible/Dockerfe
+        dest: /home/ditoihkam/be-dumbmerch/Jenkinsfile
+
+    - name: Copy .env to be-dumbemerch
+      copy:
+        src: /home/ditoihkam/ansible/.benv
+        dest: /home/ditoihkam/be-dumbmerch/.env

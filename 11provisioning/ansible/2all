@@ -1,0 +1,32 @@
+- name: Deploy Jenkins Prometheus and Grafana top on Docker
+  hosts: monitoring
+  become: yes
+
+  tasks:
+
+    - name: Pull Prometheus Docker image
+      docker_image:
+        name: bitnami/prometheus
+        source: pull
+
+    - name: Create a directory if it doesn't exist
+      ansible.builtin.file:
+        path: /home/ditoihkam/prometheus
+        state: directory
+        mode: '0755'
+
+    - name: Copy prometheus config
+      copy:
+        src: /home/ditoihkam/11provisioning/ansible/prometheus.yml
+        dest: /home/ditoihkam/prometheus/prometheus.yml
+
+    - name: Run Prometheus container
+      docker_container:
+        name: Prometheus-container
+        image: bitnami/prometheus
+        state: started
+        volumes:
+          - /home/ditoihkam/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml
+        restart_policy: unless-stopped
+        published_ports:
+          - "9090:9090"

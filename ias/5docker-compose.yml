@@ -1,0 +1,14 @@
+---
+- hosts: gateway
+  gather_facts : false
+  tasks:
+#    - name: Run docker-compose
+#      shell: docker-compose up -d
+#      args:
+#        chdir: /home/ditoihkam/
+
+
+    - name: Run docker-compose
+      docker_compose:
+        project_src: /home/ditoihkam/
+        state: present

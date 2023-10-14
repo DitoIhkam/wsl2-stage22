@@ -1,0 +1,30 @@
+- name: Ansible Copy Example Local to Remote
+  hosts: appserver
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Copy file docker-compose
+      copy:
+        src: /home/ditoihkam/ansible/appserver/docker-compose.yml
+        dest: /home/ditoihkamp/docker-compose.yml
+        owner: ditoihkamp
+        group: ditoihkamp
+
+    - name: Clone Git repository
+      git:
+        repo: https://github.com/dumbwaysdev/wayshub-frontend
+        dest: /home/ditoihkamp/wayshub-frontend
+        clone: yes
+        force: yes
+
+    - name: Copy file Dockerfile
+      copy:
+        src: ~/ansible/appserver/Dockerfile
+        dest: /home/ditoihkamp/wayshub-frontend
+        owner: ditoihkamp
+        group: ditoihkamp
+
+    - name: Run docker-compose
+      command: docker compose up -d
+      args:
+        chdir: /home/ditoihkamp/wayshub-frontend 

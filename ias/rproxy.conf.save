@@ -1,0 +1,41 @@
+server { 
+    server_name node-appserver.nafis.studentdumbways.my.id; 
+    
+    location / { 
+             proxy_pass http://server { 
+    server_name node-appserver.nafis.studentdumbways.my.id; 
+    
+    location / { 
+             proxy_pass http://103.37.125.112:9100;
+    }
+}
+server { 
+    server_name node-gateway.nafis.studentdumbways.my.id; 
+    
+    location / { 
+             proxy_pass http://103.37.125.189:9100;
+    }
+}
+server { 
+    server_name node-cicd.nafis.studentdumbways.my.id; 
+    
+    location / { 
+             proxy_pass http://103.37.125.86:9100;
+    }
+}:9100;
+    }
+}
+server { 
+    server_name node-gateway.nafis.studentdumbways.my.id; 
+    
+    location / { 
+             proxy_pass http://103.37.125.189:9100;
+    }
+}
+server { 
+    server_name node-cicd.nafis.studentdumbways.my.id; 
+    
+    location / { 
+             proxy_pass http://103.37.125.86:9100;
+    }
+}

@@ -1,0 +1,24 @@
+---
+- name: Clone fe-dumbmerch and be-dumbmerch Repositories and Add Remotes
+  hosts: appserver
+
+  tasks:
+    - name: Clone fe-dumbmerch repository
+      git:
+        repo: https://github.com/demo-dumbways/fe-dumbmerch.git
+        dest: /home/ditoihkam/fe-dumbmerch
+
+    - name: Add remote "upstream" for fe-dumbmerch
+      command: git remote add upstream https://github.com/demo-dumbways/fe-dumbmerch.git
+      args:
+        chdir: /home/ditoihkam/fe-dumbmerch
+
+    - name: Clone be-dumbmerch repository
+      git:
+        repo: https://github.com/demo-dumbways/be-dumbmerch.git
+        dest: /home/ditoihkam/be-dumbmerch
+
+    - name: Add remote "upstream" for be-dumbmerch
+      command: git remote add upstreams https://github.com/demo-dumbways/be-dumbmerch.git
+      args:
+        chdir: /home/ditoihkam/be-dumbmerch

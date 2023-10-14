@@ -1,0 +1,19 @@
+- become: true
+  gather_facts: false
+  hosts: monitoring
+  tasks:
+    - name: permission directory
+      ansible.builtin.file:
+        path: ~/grafana
+        state: directory
+        mode: "0755"
+    - name: grafana on top docker
+      community.docker.docker_container:
+        name: grafana
+        image: grafana/grafana
+        ports:
+          - 3000:3000
+        restart_policy: unless-stopped
+        volumes:
+          - ~/grafana:/var/lib/grafana
+        user: root

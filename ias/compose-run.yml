@@ -1,0 +1,7 @@
+- name: Menjalankan docker-compose up -d
+  hosts: gateway
+  tasks:
+    - name: Menjalankan docker-compose up -d
+      command: docker-compose up -d
+      args:
+        chdir: ~/docker-compose.yml

@@ -1,0 +1,10 @@
+- name: Replace a word in a file
+  hosts: appserver
+  become: true
+  gather_facts: false
+  tasks:
+    - name: Replace the word
+      replace:
+        path: /etc/apt/sources.list
+        regexp: 'http://mirrors.idcloudhost.com/ubuntu'
+        replace: 'http://archive.ubuntu.com/ubuntu'

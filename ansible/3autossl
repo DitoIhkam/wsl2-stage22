@@ -1,0 +1,21 @@
+---
+- name: Install and configure Certbot
+  hosts: gateway
+  become: yes
+
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes
+
+    - name: Reinstall Certbot and related packages
+      apt:
+        name: ['certbot', 'python3-certbot-nginx', 'python3-urllib3']
+        state: present
+
+    - name: Update package cache
+      apt:
+        update_cache: yes
+
+    - name: Obtain and install SSL certificates for domains
+      command: certbot --nginx -d prom.ditoihkamp.studentdumbways.my.id

@@ -1,0 +1,21 @@
+---
+- name: Copy SSH key to remote server and set permissions
+  hosts: all
+  become: true
+
+  tasks:
+
+    - name: Remove id_rsa private key
+      file:
+        path: /home/ditoihkam/.ssh/id_rsa
+        state: absent
+
+    - name: Copy id_rsa private key
+      copy:
+        src: /home/ditoihkam/.ssh/id_rsa
+        dest: /home/ditoihkam/.ssh/id_rsa
+
+    - name: Copy id_rsa.pub public key
+      copy:
+        src: /home/ditoihkam/.ssh/id_rsa.pub
+        dest: /home/ditoihkam/.ssh/id_rsa.pub

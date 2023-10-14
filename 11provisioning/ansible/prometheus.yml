@@ -1,0 +1,8 @@
+scrape_configs:
+  - job_name: Grafana
+    scrape_interval: 5s
+    static_configs:
+      - targets:
+        - node-monit.ditoihkamp.studentdumbways.my.id
+        - node-appserver.ditoihkamp.studentdumbways.my.id
+        - node-gateway.ditoihkamp.studentdumbways.my.id

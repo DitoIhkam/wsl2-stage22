@@ -1,0 +1,50 @@
+---
+- become: true
+  gather_facts: false
+  hosts: gateway
+  tasks:
+    - name: Installing nginx
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+    - name: Copy reverse-proxy
+      copy:
+        src: /home/ditoihkam/ias/rproxy.conf
+        dest: /etc/nginx/sites-enabled/rproxy.conf
+    - name: Reload Nginx
+      service:
+        name: nginx
+        state: reloaded
+
+
+
+    - name: Clone GitHub Repository
+      git:
+        repo: https://github.com/dumbwaysdev/wayshub-frontend
+        dest: /home/ditoihkam/wayshub-frontend
+      when: not ansible_check_mode
+
+
+    - name: Copy Dockerfile fe
+      copy:
+        src: /home/ditoihkam/ias/Dockerfile
+        dest: /home/ditoihkam/wayshub-frontend/Dockerfile
+      when: not ansible_check_mode
+
+
+    - name: Copy Docker-compose.yml
+      copy:
+        src: /home/ditoihkam/ias/docker-compose.yml
+        dest: /home/ditoihkam/docker-compose.yml
+      when: not ansible_check_mode
+
+
+    - name: Run docker-compose
+      docker_compose:
+        project_src: /home/ditoihkam/
+        state: present

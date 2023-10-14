@@ -1,0 +1,53 @@
+- name: Install node-exporter
+  hosts: monitoring
+  become: true
+  gather_facts: true
+
+  tasks:
+    - name: Download node-exporter binary
+      get_url:
+        url: https://github.com/prometheus/node_exporter/releases/download/v1.2.2/node_exporter-1.2.2.linux-amd64.tar.gz
+        dest: /tmp/node_exporter.tar.gz
+      tags: node_exporter
+
+    - name: Extract node-exporter
+      unarchive:
+        src: /tmp/node_exporter.tar.gz
+        dest: /opt
+        remote_src: yes
+        creates: /opt/node_exporter-1.2.2.linux-amd64
+      tags: node_exporter
+
+    - name: Create symlink for node-exporter
+      file:
+        src: /opt/node_exporter-1.2.2.linux-amd64/node_exporter
+        dest: /usr/local/bin/node_exporter
+        state: link
+      tags: node_exporter
+
+    - name: Copy node-exporter service file
+      copy:
+        content: |
+          [Unit]
+          Description=Node Exporter
+          After=network.target
+
+          [Service]
+          ExecStart=/usr/local/bin/node_exporter
+
+          [Install]
+          WantedBy=multi-user.target
+        dest: /etc/systemd/system/node_exporter.service
+      tags: node_exporter
+
+    - name: Reload systemd manager configuration
+      systemd:
+        daemon_reload: yes
+      tags: node_exporter
+
+    - name: Start and enable node-exporter service
+      systemd:
+        name: node_exporter
+        state: started
+        enabled: yes
+      tags: node_exporter

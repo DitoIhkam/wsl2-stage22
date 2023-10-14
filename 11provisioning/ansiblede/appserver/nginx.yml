@@ -1,0 +1,8 @@
+- become: true
+  gather_facts: false
+  hosts: gateway
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present

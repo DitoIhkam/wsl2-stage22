@@ -1,0 +1,13 @@
+---
+- become: true
+  gather_facts: false
+  hosts: all
+  tasks:
+    - name: copy ssh key
+      copy:
+        src: ~/.ssh/id_rsa
+        dest: /home/ditoihkam/.ssh
+    - name: copy ssh pub key
+      copy:
+        src: ~/.ssh/id_rsa.pub
+        dest: /home/ditoihkam/.ssh

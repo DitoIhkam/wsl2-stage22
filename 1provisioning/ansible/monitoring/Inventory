@@ -1,0 +1,11 @@
+[appserver]
+103.171.84.119
+
+[gateway]
+103.186.0.116
+
+[monitoring]
+103.139.192.100
+
+[all:vars]
+ansible_user=ditoihkam

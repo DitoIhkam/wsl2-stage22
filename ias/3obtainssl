@@ -1,0 +1,32 @@
+---
+- become: true
+  gather_facts: false
+  hosts: gateway
+  tasks:
+
+    - name: Install Certbot with Snap
+      snap:
+        name: certbot
+        classic: yes
+        state: present
+      become: yes
+
+
+    - name: Obtain and install SSL certificate with Certbot Nginx Node Exporter Gateway
+      command: certbot --nginx -d nodegate.ditoihkamc.studentdumbways.my.id --non-interactive --agree-tos --email ditoihkam@gmail.com
+      become: yes
+
+
+    - name: Obtain and install SSL certificate with Certbot Nginx Node Exporter AppServer
+      command: certbot --nginx -d nodeapp.ditoihkamc.studentdumbways.my.id --non-interactive --agree-tos --email ditoihkam@gmail.com
+      become: yes
+
+
+    - name: Obtain and install SSL certificate with Certbot Nginx prometheus
+      command: certbot --nginx -d prom.ditoihkamc.studentdumbways.my.id --non-interactive --agree-tos --email ditoihkam@gmail.com
+      become: yes
+
+
+    - name: Obtain and install SSL certificate with Certbot Nginx Grafana
+      command: certbot --nginx -d graf.ditoihkamc.studentdumbways.my.id --non-interactive --agree-tos --email ditoihkam@gmail.com
+      become: yes

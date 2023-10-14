@@ -1,0 +1,31 @@
+---
+- name: Execute Git commands on remote server
+  hosts: appserver
+  become: yes
+
+  tasks:
+
+
+    - name: Check if remote "origins" exists
+      command: git remote show origins
+      args:
+        chdir: /home/ditoihkam/fe-dumbmerch
+      register: remote_origins_check
+
+    - name: Add remote "origins"
+      command: git remote add origins git@github.com:DitoIhkam/fe-dumbmerchz.git
+      args:
+        chdir: /home/ditoihkam/fe-dumbmerch
+      when: remote_origins_check.rc != 0
+
+
+
+    - name: Set remote origin URL
+      command: git remote set-url origins git@github.com:DitoIhkam/fe-dumbmerchz.git
+      args:
+        chdir: /home/ditoihkam/fe-dumbmerch
+
+    - name: Push changes to staging branch
+      command: git push origins staging
+      args:
+        chdir: /home/ditoihkam/fe-dumbmerch

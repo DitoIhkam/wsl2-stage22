@@ -1,0 +1,22 @@
+    # Tugas 3: Deploy aplikasi wayshub-frontend menggunakan docker-compose
+    - name: "Install Docker Compose"
+      apt:
+        name: docker-compose
+        state: present
+
+    - name: "Copy docker-compose.yml for wayshub-frontend"
+      copy:
+        src: /path/to/your/docker-compose.yml
+        dest: /home/ditoihkam/docker-compose.yml
+        remote_src: yes
+
+    - name: "Change ownership of docker-compose.yml"
+      file:
+        path: /home/ditoihkam/docker-compose.yml
+        owner: ditoihkam
+        group: ditoihkam
+
+    - name: "Run docker-compose for wayshub-frontend"
+      shell: "docker-compose -f /home/ditoihkam/docker-compose.yml up -d"
+      args:
+        chdir: /home/ditoihkam

@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  frontend:
+      build: ./wayshub-frontend
+      container_name: wayshub-fee
+      stdin_open: true
+      ports:
+        - 8080:3000
