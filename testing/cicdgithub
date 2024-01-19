@@ -1,0 +1,36 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v2
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0
+      with:
+        ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+    - name: Build and Push Docker Image
+      run: |
+        docker build -t my-image:latest .
+        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+        docker tag my-image:latest ${{ secrets.DOCKER_REGISTRY }}/my-image:latest
+        docker push ${{ secrets.DOCKER_REGISTRY }}/my-image:latest
+
+    - name: SSH to Appserver and Run Container
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.APPSERVER_HOST }}
+        username: ${{ secrets.APPSERVER_SSH_USERNAME }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        script: |
+          docker pull ${{ secrets.DOCKER_REGISTRY }}/my-image:latest
+          docker run -d --name my-container ${{ secrets.DOCKER_REGISTRY }}/my-image:latest

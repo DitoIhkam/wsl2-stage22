@@ -1,0 +1,22 @@
+---
+- become: true
+  gather_facts: false
+  hosts: gateway
+  tasks:
+    - name: Installing nginx
+      apt:
+        name: nginx
+        state: latest
+        update_cache: yes
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+    - name: Copy reverse-proxy.conf
+      copy:
+        src: /home/ditoihkam/ftask2/source/reverse-proxy.conf
+        dest: /etc/nginx/sites-enabled
+    - name: Reload Nginx
+      service:
+        name: nginx
+        state: reloaded

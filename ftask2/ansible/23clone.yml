@@ -1,0 +1,15 @@
+---
+- hosts: appserver
+  gather_facts: false
+  tasks:
+    - name: Clone fe-dumbmerch Repository
+      git:
+        repo: https://github.com/demo-dumbways/fe-dumbmerch
+        dest: /home/ditoihkam/fe-dumbmerch
+      when: not ansible_check_mode
+
+    - name: Clone be-dumbmerch Repository
+      git:
+        repo: https://github.com/demo-dumbways/be-dumbmerch
+        dest: /home/ditoihkam/be-dumbmerch
+      when: not ansible_check_mode

@@ -1,0 +1,15 @@
+host gateway
+    HostName (ip gateway)
+    User ditoihkam
+
+host appserver
+    Hostname (ip appserver)
+    User ditoihkam
+    ProxyCommand ssh gateway -W %h:%p
+    IdentityFile /home/ditoihkam/.ssh/id_rsa
+
+host monitoring
+    Hostname (ip monitoring)
+    User ditoihkam
+    ProxyCommand ssh gateway -W %h:%p
+    identityFile /home/ditoihkam/.ssh/id_rsa

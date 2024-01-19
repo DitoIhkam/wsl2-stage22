@@ -1,0 +1,24 @@
+2023-10-28 11:29:16,293 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2023-10-28 11:29:16,310 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2023-10-28 11:29:16,321 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:1: "['gke-gcloud-auth-plugin']"]
+2023-10-28 11:29:16,330 DEBUG    root            (gcloud.components.install) You cannot perform this action because this Google Cloud CLI installation is managed by an external package manager.
+Please consider using a separate installation of the Google Cloud CLI created through the default mechanism described at: https://cloud.google.com/sdk/
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/187/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/snap/google-cloud-cli/187/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/snap/google-cloud-cli/187/lib/surface/components/install.py", line 90, in Run
+    update_manager.Install(
+  File "/snap/google-cloud-cli/187/lib/googlecloudsdk/core/updater/update_manager.py", line 969, in Install
+    return self.Update(
+  File "/snap/google-cloud-cli/187/lib/googlecloudsdk/core/updater/update_manager.py", line 1005, in Update
+    self._CheckIfDisabledAndThrowError(
+  File "/snap/google-cloud-cli/187/lib/googlecloudsdk/core/updater/update_manager.py", line 626, in _CheckIfDisabledAndThrowError
+    raise UpdaterDisabledError(default_message)
+googlecloudsdk.core.updater.update_manager.UpdaterDisabledError: You cannot perform this action because this Google Cloud CLI installation is managed by an external package manager.
+Please consider using a separate installation of the Google Cloud CLI created through the default mechanism described at: https://cloud.google.com/sdk/
+
+2023-10-28 11:29:16,338 ERROR    root            (gcloud.components.install) You cannot perform this action because this Google Cloud CLI installation is managed by an external package manager.
+Please consider using a separate installation of the Google Cloud CLI created through the default mechanism described at: https://cloud.google.com/sdk/
+

@@ -1,0 +1,126 @@
+2023-10-28 11:30:07,318 DEBUG    root            Loaded Command Group: ['gcloud', 'init']
+2023-10-28 11:30:07,323 DEBUG    root            Running [gcloud.init] with arguments: []
+2023-10-28 11:30:07,330 INFO     ___FILE_ONLY___ Welcome! This command will take you through the configuration of gcloud.
+
+
+2023-10-28 11:30:07,331 INFO     ___FILE_ONLY___ Settings from your current configuration [default] are:
+
+2023-10-28 11:30:07,339 INFO     ___FILE_ONLY___ core:
+  account: ditoihkam@gmail.com
+  disable_usage_reporting: 'True'
+
+2023-10-28 11:30:07,339 INFO     ___FILE_ONLY___ 
+
+2023-10-28 11:30:14,897 INFO     ___FILE_ONLY___ Your current configuration has been set to: [default]
+
+
+2023-10-28 11:30:14,897 INFO     ___FILE_ONLY___ You can skip diagnostics next time by using the following flag:
+
+2023-10-28 11:30:14,897 INFO     ___FILE_ONLY___   gcloud init --skip-diagnostics
+
+
+2023-10-28 11:30:14,898 INFO     ___FILE_ONLY___ Network diagnostic detects and fixes local network connection issues.
+
+2023-10-28 11:30:14,902 INFO     ___FILE_ONLY___ Checking network connection...
+2023-10-28 11:30:17,481 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): accounts.google.com:443
+2023-10-28 11:30:17,675 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET / HTTP/1.1" 302 338
+2023-10-28 11:30:17,746 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /ServiceLogin?passive=1209600&continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F HTTP/1.1" 302 0
+2023-10-28 11:30:17,845 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /InteractiveLogin?continue=https://accounts.google.com/&followup=https://accounts.google.com/&passive=1209600&ifkv=AVQVeyw_W6cnUTc2VglLWHOqWxSQnBBBVLOp38o4F4bJtCgk1eCQfaw5yXB2xJLsDqSihShaB-UJ_w HTTP/1.1" 302 528
+2023-10-28 11:30:17,971 DEBUG    urllib3.connectionpool https://accounts.google.com:443 "GET /v3/signin/identifier?continue=https%3A%2F%2Faccounts.google.com%2F&followup=https%3A%2F%2Faccounts.google.com%2F&ifkv=AVQVeyzWg7bLgkPZKpHBmnlK6nzX3TdPutY7Z7A0BF1ftwr3RrUCssuZo7A7j-0Ak2zSQOQZmxivFw&passive=1209600&flowName=WebLiteSignIn&flowEntry=ServiceLogin&dsh=S-1107181109%3A1698467418500961 HTTP/1.1" 200 None
+2023-10-28 11:30:18,094 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-10-28 11:30:19,181 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1beta1/projects HTTP/1.1" 401 None
+2023-10-28 11:30:19,204 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): www.googleapis.com:443
+2023-10-28 11:30:19,324 DEBUG    urllib3.connectionpool https://www.googleapis.com:443 "GET /auth/cloud-platform HTTP/1.1" 200 14
+2023-10-28 11:30:19,338 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2023-10-28 11:30:19,500 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 209943
+2023-10-28 11:30:19,726 INFO     ___FILE_ONLY___ Reachability Check passed.
+
+2023-10-28 11:30:19,728 INFO     ___FILE_ONLY___ Network diagnostic passed (1/1 checks passed).
+
+
+2023-10-28 11:30:29,954 INFO     ___FILE_ONLY___ You are logged in as: [ditoihkam@gmail.com].
+
+
+2023-10-28 11:30:30,026 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2023-10-28 11:30:31,470 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=201 HTTP/1.1" 200 None
+2023-10-28 11:30:52,616 INFO     ___FILE_ONLY___ Your current project has been set to: [sapient-visitor-398015].
+
+
+2023-10-28 11:30:52,711 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2023-10-28 11:30:52,721 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project_info']
+2023-10-28 11:30:52,773 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'project-info', 'describe']
+2023-10-28 11:30:52,777 INFO     root            Executing: [gcloud compute project-info describe --quiet]
+2023-10-28 11:30:52,781 DEBUG    root            Running [gcloud.compute.project-info.describe] with arguments: [--no-user-output-enabled: "false", --quiet: "True", --verbosity: "none"]
+2023-10-28 11:30:53,240 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-10-28 11:30:53,811 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/sapient-visitor-398015?alt=json HTTP/1.1" 200 None
+2023-10-28 11:30:53,821 INFO     root            Display disabled.
+2023-10-28 11:30:53,821 DEBUG    root            SDK update checks are disabled.
+2023-10-28 11:30:59,619 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones']
+2023-10-28 11:30:59,630 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'zones', 'list']
+2023-10-28 11:30:59,634 INFO     root            Executing: [gcloud compute zones list]
+2023-10-28 11:30:59,640 DEBUG    root            Running [gcloud.compute.zones.list] with arguments: [--no-user-output-enabled: "false", --verbosity: "none"]
+2023-10-28 11:30:59,676 INFO     root            Display disabled.
+2023-10-28 11:30:59,683 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-10-28 11:31:00,141 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/sapient-visitor-398015/zones?alt=json&maxResults=500 HTTP/1.1" 200 None
+2023-10-28 11:31:00,164 DEBUG    root            SDK update checks are disabled.
+2023-10-28 11:31:23,271 INFO     ___FILE_ONLY___ Your project default Compute Engine zone has been set to [asia-southeast1-a].
+You can change it by running [gcloud config set compute/zone NAME].
+
+
+2023-10-28 11:31:23,276 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions']
+2023-10-28 11:31:23,294 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'regions', 'describe']
+2023-10-28 11:31:23,301 INFO     root            Executing: [gcloud compute regions describe https://www.googleapis.com/compute/v1/projects/sapient-visitor-398015/regions/asia-southeast1]
+2023-10-28 11:31:23,305 DEBUG    root            Running [gcloud.compute.regions.describe] with arguments: [--no-user-output-enabled: "false", --verbosity: "none", NAME: "https://www.googleapis.com/compute/v1/projects/sapient-visitor-398015/regions/asia-southeast1"]
+2023-10-28 11:31:23,326 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2023-10-28 11:31:24,202 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/sapient-visitor-398015/regions/asia-southeast1?alt=json HTTP/1.1" 200 None
+2023-10-28 11:31:24,224 INFO     root            Display disabled.
+2023-10-28 11:31:24,224 DEBUG    root            SDK update checks are disabled.
+2023-10-28 11:31:24,247 INFO     ___FILE_ONLY___ Your project default Compute Engine region has been set to [asia-southeast1].
+You can change it by running [gcloud config set compute/region NAME].
+
+
+2023-10-28 11:31:24,248 DEBUG    root            Executing command: ['/snap/google-cloud-cli/187/bin/gsutil', 'config', '-n', '-o', '/home/ditoihkam/.boto']
+2023-10-28 11:31:33,627 DEBUG    ___FILE_ONLY___ 
+2023-10-28 11:31:33,628 DEBUG    ___FILE_ONLY___ This command will create a boto config file at /home/ditoihkam/.boto
+containing your credentials, based on your responses to the following
+questions.
+
+Boto config file "/home/ditoihkam/.boto" created. If you need to use a
+proxy to access the Internet please see the instructions in that file.
+
+2023-10-28 11:31:33,629 INFO     ___FILE_ONLY___ Created a default .boto configuration file at [/home/ditoihkam/.boto]. See this file and
+[https://cloud.google.com/storage/docs/gsutil/commands/config] for more
+information about configuring Google Cloud Storage.
+
+2023-10-28 11:31:33,629 INFO     ___FILE_ONLY___ Your Google Cloud SDK is configured and ready to use!
+
+
+2023-10-28 11:31:33,630 INFO     ___FILE_ONLY___ * Commands that require authentication will use ditoihkam@gmail.com by default
+
+2023-10-28 11:31:33,631 INFO     ___FILE_ONLY___ * Commands will reference project `sapient-visitor-398015` by default
+
+2023-10-28 11:31:33,632 INFO     ___FILE_ONLY___ * Compute Engine commands will use region `asia-southeast1` by default
+
+2023-10-28 11:31:33,633 INFO     ___FILE_ONLY___ * Compute Engine commands will use zone `asia-southeast1-a` by default
+
+
+2023-10-28 11:31:33,634 INFO     ___FILE_ONLY___ Run `gcloud help config` to learn how to change individual settings
+
+
+2023-10-28 11:31:33,635 INFO     ___FILE_ONLY___ This gcloud configuration is called [default]. You can create additional configurations if you work with multiple accounts and/or projects.
+
+2023-10-28 11:31:33,636 INFO     ___FILE_ONLY___ Run `gcloud topic configurations` to learn more.
+
+
+2023-10-28 11:31:33,637 INFO     ___FILE_ONLY___ Some things to try next:
+
+
+2023-10-28 11:31:33,638 INFO     ___FILE_ONLY___ * Run `gcloud --help` to see the Cloud Platform services you can interact with. And run `gcloud help COMMAND` to get help on any gcloud command.
+
+2023-10-28 11:31:33,639 INFO     ___FILE_ONLY___ * Run `gcloud topic --help` to learn about advanced features of the SDK like arg files and output formatting
+
+2023-10-28 11:31:33,640 INFO     ___FILE_ONLY___ * Run `gcloud cheat-sheet` to see a roster of go-to `gcloud` commands.
+
+2023-10-28 11:31:33,641 DEBUG    root            Chosen display Format:default
+2023-10-28 11:31:33,648 INFO     root            Display format: "default"
+2023-10-28 11:31:33,649 DEBUG    root            SDK update checks are disabled.

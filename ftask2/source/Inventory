@@ -1,0 +1,9 @@
+[appserver]
+103.175.221.143
+
+[gateway]
+103.175.217.129
+
+[all:vars]
+ansible_user=ditoihkam
+ansible_ssh_private_key_file=/home/ditoihkam/.ssh/id_rsa

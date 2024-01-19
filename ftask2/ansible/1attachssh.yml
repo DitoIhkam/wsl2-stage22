@@ -1,0 +1,15 @@
+- hosts: all
+  become: true
+  tasks:
+    - name: Copy SSH public key to remote host
+      authorized_key:
+        user: ditoihkam
+        key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present
+
+    - name: Copy SSH key
+      copy:
+        src: /home/ditoihkam/.ssh/id_rsa
+        dest: /home/ditoihkam/.ssh/id_rsa
+      when: not ansible_check_mode
+

@@ -1,0 +1,26 @@
+- become: true
+  gather_facts: false
+  hosts: gateway
+  tasks:
+    - name: Disable UFW
+      community.general.ufw:
+        state: disabled
+    - name: Delete UFW rules
+      community.general.ufw:
+        rule: delete
+        proto: tcp
+        port: "{{ item }}"
+      with_items:
+        - 22
+        - 80
+        - 443
+        - 3000
+        - 3001
+        - 5000
+        - 3306
+        - 9090
+        - 9100
+        - 5432
+    - name: Reload UFW
+      community.general.ufw:
+        state: reloaded

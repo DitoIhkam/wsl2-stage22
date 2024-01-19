@@ -1,0 +1,23 @@
+---
+- hosts: appserver
+  gather_facts: false
+  tasks:
+
+    - name: Copy Dockerfile fe
+      copy:
+        src: /home/ditoihkam/ftask2/source/Dockerfilefe
+        dest: /home/ditoihkam/fe-dumbmerch/Dockerfile
+      when: not ansible_check_mode
+
+    - name: Copy Dockerfile be
+      copy:
+        src: /home/ditoihkam/ftask2/source/Dockerfilebe
+        dest: /home/ditoihkam/be-dumbmerch/Dockerfile
+      when: not ansible_check_mode
+
+
+    - name: Copy Docker-compose.yml
+      copy:
+        src: /home/ditoihkam/ftask2/source/docker-compose.yml
+        dest: /home/ditoihkam/docker-compose.yml
+      when: not ansible_check_mode

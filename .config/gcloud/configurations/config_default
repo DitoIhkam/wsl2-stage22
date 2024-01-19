@@ -1,0 +1,8 @@
+[core]
+account = ditoihkam@gmail.com
+project = sapient-visitor-398015
+
+[compute]
+zone = asia-southeast1-a
+region = asia-southeast1
+

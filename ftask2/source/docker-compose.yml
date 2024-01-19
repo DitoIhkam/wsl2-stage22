@@ -1,0 +1,41 @@
+version: '3.8'
+services:
+  frontend:
+    build: ./fe-dumbmerch
+    container_name: fe-container-production
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
+    networks:
+      - network
+    restart: unless-stopped
+
+  backend:
+    build: ./be-dumbmerch
+    container_name: be-container-production
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+    networks:
+      - network
+    restart: unless-stopped
+
+  postgres:
+    image: "postgres"
+    container_name: db-container-production
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+    volumes:
+      - "./data/postgresql:/var/lib/postgresql/data"
+    networks:
+      - network
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+networks:
+  network:

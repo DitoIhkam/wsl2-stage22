@@ -1,0 +1,14 @@
+2023-10-28 11:31:59,255 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters']
+2023-10-28 11:31:59,269 DEBUG    root            Loaded Command Group: ['gcloud', 'container', 'clusters', 'get_credentials']
+2023-10-28 11:31:59,422 DEBUG    root            Running [gcloud.container.clusters.get-credentials] with arguments: [--project: "sapient-visitor-398015", --region: "asia-southeast1", NAME: "autopilot-cluster-1"]
+2023-10-28 11:31:59,516 INFO     ___FILE_ONLY___ Fetching cluster endpoint and auth data.
+
+2023-10-28 11:31:59,528 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): container.googleapis.com:443
+2023-10-28 11:32:00,077 DEBUG    urllib3.connectionpool https://container.googleapis.com:443 "GET /v1/projects/sapient-visitor-398015/locations/asia-southeast1/clusters/autopilot-cluster-1?alt=json HTTP/1.1" 200 None
+2023-10-28 11:32:00,346 CRITICAL root            ACTION REQUIRED: gke-gcloud-auth-plugin, which is needed for continued use of kubectl, was not found or is not executable. Install gke-gcloud-auth-plugin for use with kubectl by following https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
+2023-10-28 11:32:00,414 DEBUG    root            Saved kubeconfig to /home/ditoihkam/.kube/config
+2023-10-28 11:32:00,414 INFO     ___FILE_ONLY___ kubeconfig entry generated for autopilot-cluster-1.
+
+2023-10-28 11:32:00,417 DEBUG    root            Chosen display Format:default
+2023-10-28 11:32:00,424 INFO     root            Display format: "default"
+2023-10-28 11:32:00,426 DEBUG    root            SDK update checks are disabled.

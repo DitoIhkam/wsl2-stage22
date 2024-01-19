@@ -1,519 +1,4 @@
 ansible-playbook 4nginx-install.yml 
-ansible-playbook 5install-jenkins.yml 
-ls
-cat 4nginx-install.yml 
-ls
-cat reverse-proxy-wayshub
-cat reverse-proxy-wayshub.conf 
-ansible-playbook 4nginx-install.yml 
-cat 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-cat 4nginx-install.yml 
-ls
-cat reverse-proxy-wayshub1.conf 
-mv reverse-proxy-wayshub1.conf reverse-proxy-wayshu
-ls
-ansible-playbook 4nginx-install.yml 
-cat 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-cat 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-clear
-ssh ditoihkam@103.181.143.130
-ssh ditoihkam@103.181.142.165
-ssh ditoihkam@103.181.143.130
-cd .ssh/
-l
-rm -rf known_hosts 
-l
-cd
-ssh ditoihkam@103.181.143.130
-ssh ditoihkam@103.181.143.155
-ssh ditoihkam@103.181.142.165
-ls
-cd .ssh
-ls
-ssh ditoihkam@103.181.142.165
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-nano reverse-proxy-wayshubb.conf
-clear
-ls
-cat 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 2disablepassword 3runnodeexporter.yml 
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 2disablepassword 3runnodeexporter.yml 
-ls
-ansible-playbook 1ins_docknode.yml 2disablepassword 3runnodeexporter.yml 
-ls
-cat 4nginx-install.yml 
-ansible-playbook 4
-ansible-playbook 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-l
-ansible-playbook 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-l
-nano 4
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-cat 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-ls
-cat 5install-jenkins.yml 
-ansible-playbook 5install-jenkins.yml 6install-prom.yml 7install-grafana.yml  8ssshkey.yml 
-ls
-cd ..
-ls
-cd
-ls
-cd 2repository/
-ls
-cd be-dumbmerch/
-ls
-cd ..
-ls
-cd fe-dumbmerch/
-ls
-cd
-cd 3servermanagement/
-ls
-cat 1sshkey.yml 
-ansible-playbook 1sshkey.yml 
-cd
-ls
-cd 1provisioning/
-ls
-cd
-cd 1provisioning/
-ls
-cd ansible
-ls
-cd
-ls
-cdc 1provisioning/
-ls
-cd 1provisioning/
-ls
-cd 1
-ls
-cd ansible
-ls
-nano Jenkinsfile
-ls
-git config --list
-cat Jenkinsfile 
-cd
-ls
-ssh ditoihkamp@103.181.143.155
-ssh ditoihkam@103.181.143.155
-ssh ditoihkam@103.181.143.130
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-cat 6install-prom.yml.save 
-cat 6install-prom.yml
-rm -rf 6install-prom.yml.save 
-ansible-playbook 6install-prom.yml 
-clear
-cd
-ssh appserver
-cd 1provisioning/terraform/
-ls
-cd
-cd 1provisioning/ansible
-ls
-ssh ditoihkam@103.181.142.165
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-ssh appserver
-cd .ssh
-s
-ls
-cat config 
-cd
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-cat 8ssshkey.yml 
-ubuntu
-ubuntu version
-neofetch
-sudo apt install neofetch
-neofetch
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-cd
-cd 1provisioning/ansible
-ls
-cat 1ins_docknode.yml 
-cd
-ls
-cd 1provisioning/
-ls
-cd terraform/
-ls
-cd 1appserver/
-ls
-rm -r terraform.tfstate terraform.tfstate.backup 
-ls
-cat main.tf 
-clear
-ls
-cd ..
-ls
-cd 1appserver/
-ls
-clear
-ls
-cd ..
-clear
-ls
-cd 1appserver/
-ls
-cd ../2gateway/
-ls
-rm --r terraform.tfstate terraform.tfstate.backup 
-cd ../3monitoring/
-ls
-rm -r terraform.tfstate terraform.tfstate.backup 
-ls
-cd ../1appserver/
-ls
-cat main.tf 
-git
-man git
-less man git
-ls
-cd ../2gateway/
-ls
-cd ../3monitoring/
-ls
-mv main.tf monitoring.tf
-cd ../2gateway/
-ls
-cd ../3monitoring/
-ls
-cd ../2gateway/
-ls
-mv main.tf gateway.tf
-ls
-cd ../1appserver/
-ls
-mv main.tf appserver.tf
-ssh ditoihkam@103.172.205.204
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-cd
-cd 1provisioning/terraform/
-ls
-cd 1appserver/
-ls
-cat appserver.tf 
-cd ../2gateway/
-ls
-cat gateway.tf 
-cd ../3monitoring/
-ls
-cat monitoring.tf 
-clear
-cd ../1appserver/
-ls
-terraform init
-terraform validate
-terraform plan
-terraform apply
-cd ../2gateway/
-ls
-terraform init
-terraform validate
-terraform plan
-terraform apply
-cd ../3monitoring/
-ls
-terraform init
-terraform validate
-terraform plan
-cd
-cd 1provisioning/ansible
-ls
-cat 1ins_docknode.yml 
-ls
-cat ansible.cfg 
-cat Inventory 
-cd
-cd 1provisioning/terraform/
-ls
-cd 3monitoring/
-ls
-terraform apply
-cd
-cd 1provisioning/ansible
-ls
-nano ansible.cfg 
-nano Inventory 
-cat Inventory 
-cat 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-cat 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-cat 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-cd
-ls
-cd terransible/
-ls
-cd ansible
-ls
-cd appserver/
-ls
-cat 2ins_docknode.yml 
-cd
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-cat Inventory 
-ansible-playbook 1ins_docknode.yml 
-cd
-cd 1provisioning/terraform/
-ls
-cd 1appserver/
-terraform destroy
-ls
-cd ap
-nano appserver.tf 
-terraform apply
-cd
-cd 1provisioning/ansible
-ls
-ansible-playbook 1ins_docknode.yml 
-nano Inventory 
-ansible-playbook 1ins_docknode.yml 
-cat 1ins_docknode.yml 
-nano 0replacemirror
-cat 1ins_docknode.yml 
-nano 0replacemirror 
-ansible-playbook 0replacemirror 
-mv 0replacemirror 0replacemirror.yml
-ansible-playbook 0replacemirror 
-ansible-playbook 0replacemirror.yml 
-nano 0replacemirror.yml 
-ansible-playbook 0replacemirror.yml 
-ls
-ansible-playbook 1ins_docknode.yml 
-cat 1ins_docknode.yml 
-nano 1ins_docknode.yml 
-ansible-playbook 1ins_docknode.yml 
-ls
-cat 1ins_docknode.yml 
-ssh ditoihkam@103.186.0.52
-ssh ditoihkam@103.176.79.201
-cd 1provisioning/ansible
-ls
-cd ..
-ls
-cd ansible
-ls
-cat 1ins_docknode.yml 
-ls
-ansible-playbook 2disablepassword 
-ls
-cat 3runnodeexporter.yml 
-cat 1ins_docknode.yml 
-cat 3runnodeexporter.yml 
-ansible-playbook 3runnodeexporter.yml 
-cat reverse-proxy-wayshu
-cat reverse-proxy-wayshub.conf 
-LS
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-cat 1ins_docknode.yml 
-ls
-ansible-playbook 1ins_docknode.yml 
-docker version
-ssh ditoihkam@27.112.78.5
-cd 1provisioning/ansible
-ls
-cat 2disablepassword 
-cat 8ssshkey.yml 
-ls
-mv 8ssshkey.yml 2ssshkey.yml 
-ls
-cd 1provisioning/ansible
-ls
-cat Inventory 
-neofetch
-clear
-ls
-cd 1provisioning/
-ls
-cd ansible
-ls
-cat 8ssshkey.yml 
-cat 2disablepassword 
-ls
-clear
-ansible-playbook 2ssshkey.yml 2disablepassword 
-CLEAR
-clear
-cls
-clear
-ls
-cat 3runnodeexporter.yml 
-ansible-playbook 3runnodeexporter.yml 
-cat 3runnodeexporter.yml 
-ls
-clear
-cat 4nginx-install.yml 
-clear
-ansible-playbook 4nginx-install.yml 
-cat 4nginx-install.yml 
-cat 1
-cat 1ins_docknode.yml 
-cat 4nginx-install.yml 
-nano 4nginx-install.yml 
-ansible-playbook 4nginx-install.yml 
-nano 4ssnginx-install.yml 
-cat 4ssnginx-install.yml 
-ansible-playbook 4ssnginx-install.yml 
-nano 4ssnginx-install.yml 
-ansible-playbook 4ssnginx-install.yml 
-cat 4ssnginx-install.yml 
-cat reverse-proxy-wayshub.conf 
-nano reverse-proxy-wayshu
-nano reverse-proxy-wayshub.conf 
-ansible-playbook 4ssnginx-install.yml 
-clear
-ls
-cat 6sprometheus.yml 
-clear
-ls
-cat 5install-jenkins.yml 
-cat 6o
-cat 6install-prom.yml 
-clear
-ls
-cat 7install-grafana.yml 
-clear
-ansible-playbook 5install-jenkins.yml 
-ansible-playbook 6install-prom.yml 
-ansible-playbook 7install-grafana.yml 
-cd .ssh
-ls
-cat config 
-nano config 
-cat config 
-ssh ditoihkam@103.172.205.204
-ssh ditoihkam@27.112.78.5
-cd .ssh
-ls
-rm -r known_hosts 
-cd
-ssh ditoihkam@27.112.78.5
-cd 1provisioning/ansible
-ls
-cat reverse-proxy-wayshub.conf 
-ls
-cat 6sprometheus.yml 
-ansible-playbook 6sprometheus.yml 
-cat 6install-prom.yml 
-cat 3runnodeexporter.yml 
-ls
-cat 7install-grafana.yml 
-cd
-ls
-cp -r 1provisioning ~
-mkdir 11provisioning
-cd 1
-cd 1provisioning/
-ls
-cp -r . ~/11provisioning/
-cd
-cd 11provisioning/
-ls
-cd ansible
-ls
-rm -r 1ins_docknode.yml 
-nano 1all
-ansible-playbook 1all 
-nano 1all 
-ansible-playbook 1all 
-nano 1all 
-ansible-playbook 1all 
-ls
-cat 1all 
-ls
-cat 6sprometheus.yml 
-nano 1all 
-ansible-playbook 1all 
-nano 1all 
-ansible-playbook 1all 
-nano 1all 
-ssh ditoihkam@103.172.205.204
-cd 11provisioning/ansible
-ls
-cat 1all 
-nano 1all 
-ansible-playbook 1all 
-nano 1all 
-ansible-playbook 1all 
-nano 1all 
-ansible-playbook 1all 
-nano 1all 
-ansible-playbook 1all 
-cat Inventory 
-cat 1all 
-ls
-cat reverse-proxy-wayshub.conf 
-ls
-cat 4
-cat 4nginx-install.yml 
-nano 4nginx-install.yml 
-mv reverse-proxy-wayshub.conf reverse-proxy.conf
-ls
-ansible-playbook 4nginx-install.yml 
 cat 4i
 ls
 cat 4nginx-install.yml 
@@ -1998,3 +1483,518 @@ ls
 cat 1appserver.yml 
 cat 2gateway.yml 
 ssh ditoihkam@103.175.217.129
+l
+git remote -v
+git init
+git config --list
+git remote -v
+git remote add origin git@github.com:DitoIhkam/wsl2-stage22.git
+git add .
+git commit -m "backup"
+git push
+git push --set-upstream origin master
+l
+ll
+cd 11provisioning/
+ls
+cd ansible
+ls
+cat 0replacemirror.yml 
+cat 1all 
+ls
+cat 4
+cat 4ssnginx-install.yml
+cat 4nginx-install.yml 
+ls
+nano sshconfig
+cat set-firewall.yml 
+ssh ditoihkam@103.175.217.129
+ssh ditoihkam@103.175.221.143
+cd .ssh/
+ls
+rm known_hosts 
+l
+ssh ditoihkam@103.175.221.143
+cd 11provisioning/
+ls
+cd ansible
+ls
+cat 1all 
+l
+cat 2
+cat 2all 
+ls
+cd .
+cd ..
+ls
+cd ansible2/
+l
+cd ..
+ls
+cd ansiblede/
+ls
+cd
+ls
+cd 1provisioning/
+ls
+cd ansible
+ls
+cd
+cd ias/
+ls
+cat 1appserver.yml 
+l
+cat 5
+cat 4cl
+cat 5clone.yml 
+cd
+;s
+ls
+cd 11provisioning/
+ls
+cd ansible
+ls
+cat 4
+cat 4nginx-install.yml 
+cat 4ssnginx-install.yml
+cd
+cd ias/
+ls
+cat 3obtainssl 
+ls
+cat Dockerfile 
+cd
+ls
+cd 11provisioning/
+ls
+cd ansible
+ls
+cat 1all 
+cat sshconfig 
+cat 1all 
+ls
+cd
+cd ias/
+ls
+cat 5clone.yml 
+cd ../ftask2/ansible/
+ls
+cat 23clone.yml 
+nano 23clone.yml 
+cd ../source/
+ls
+cat Inventory 
+cd ../ansible/
+ls
+cat 24prom-install.yml 
+nano 24prom-install.yml 
+cat ../source/prometheus.yml 
+nano pr
+nano ../source/prometheus.yml 
+cat ../source/prometheus.yml 
+cat 24prom-install.yml 
+ls
+cat 25graf-install.yml 
+nano 25graf-install.yml 
+cat 24prom-install.yml 
+nano 24prom-install.yml 
+cat 25graf-install.yml 
+nano 25graf-install.yml 
+ls
+cat 31nginx-install.yml 
+cd ../source/
+ls
+cd ../ansible/
+nano 31nginx-install.yml 
+cd
+cd ias/
+ls
+cat rproxy.conf
+cd
+ls
+cd ftask2/
+ls
+cd source/
+ls
+nano reverse-proxy.conf 
+cd ../ansible/
+ls
+cat 32obtain-ssl.yml 
+nano 32obtain-ssl.yml 
+cat 32obtain-ssl.yml 
+ssh appserver
+ls
+cat 33copyconfigssh 
+rm 33copyconfigssh 
+nano 33copydockerfile
+cd ../source/
+ls
+nano docker-compose.yml
+cat docker-compose.yml 
+ls
+cd
+cd ias/
+ls
+cat 5
+cat 5clone.yml 
+cd
+cd ftask2/
+ls
+cd source/
+ls
+cat Dockerfilefe 
+cat Dockerfilebe 
+ssh appserver
+cd 11provisioning/
+ls
+cd ansible
+ls
+cat reverse-proxy.conf 
+cd ../s
+ssh ditoihkam@103.175.221.143
+ssh ditoihkam@103.175.217.129
+ssh appserver
+ssh gateway
+ssh gateway
+cd ftask2/ansible/
+cat 31clonedocker 
+cat 34firewall-install.yml 
+cd
+cd 11provisioning/
+cd ansible
+ls
+cat set-firewall.yml 
+cd
+cd ftask2/ansible/
+ssh gateway
+cd
+cd .ssh
+ls
+rm known_hosts 
+ssh gateway 
+ssh gateway
+cd /etc/letsencrypt/
+ssh gateway
+cd .ssh
+ls
+rm known_hosts 
+cd
+ssh gateway
+cd ftask2/ansible/
+ls
+cat 34firewall-install.yml 
+nano 34firewall-install.yml 
+ansible-playbook 34firewall-install.yml 
+ssh appserver
+ls
+cat 34firewall-install.yml 
+ls
+nano 35disable-ufw
+mv 35disable-ufw 35disable-ufw.yml
+ansible-playbook 35disable-ufw.yml 
+cat 35disable-ufw.yml 
+ls
+nano 35disable-ufw.yml 
+ansible-playbook 35disable-ufw.yml 
+ls
+ansible-playbook 1attachssh.yml 21docker-install.yml 23clone.yml 22nodexp-install.yml 24prom-install.yml 25graf-install.yml 26nginx-install.yml 31clonedocker 32obtain-ssl.yml 
+ssh appserver
+cd
+cd.ssh
+cd .ssh
+cat config 
+cd
+ssh appserver
+ls
+cd ftask2/
+ls
+cd ansible/
+ls
+cat 22nodexp-install.yml 
+ansible-playbook 22nodexp-install.yml 26nginx-install.yml 
+ls
+ansible-playbook 1attachssh.yml 21docker-install.yml 22nodexp-install.yml 26nginx-install.yml 
+ls
+ansible-playbook 34firewall-install.yml 
+ansible-playbook 1attachssh.yml 21docker-install.yml 22nodexp-install.yml 26nginx-install.yml 34firewall-install.yml 
+ls
+ansible-playbook 32obtain-ssl.yml 
+ssh appserver
+ssh gateway
+ssh appserver
+nano 34firewall-install.yml 
+ssh appserver
+l
+cat 34firewall-install.yml 
+ssh appserver
+cd 
+cd .ssj
+cd .ssh
+rm known_hosts 
+cd
+ssh appserver
+ls
+cd ftask2/ansible/
+ls
+cat 34firewall-install.yml 
+ansible-playbook 34firewall-install.yml 
+cd
+cd .ssh
+cat id_rsa
+cd
+mkdir testing
+cd testing/
+nano cicdgithub
+cd
+cd .ssh
+cat config 
+clear
+ssh appserver
+cd .ssh
+ls
+cat config 
+ssh appserver
+cd ftask2/
+ls
+cd ansible/
+ls
+cat 1attachssh.yml 
+ls
+cat 21docker-install.yml 
+cat 22nodexp-install.yml 
+ls
+cat 23clone.yml 
+cat 26nginx-install.yml 
+ls
+cat 32obtain-ssl.yml 
+neofetch
+ls
+cd
+cd .ssh
+cat config n
+cd
+cd ftask2/
+l
+cd ansible/
+ls
+cat 34firewall-install.yml 
+ssh appserver
+docker ps -a
+ssh gateway
+ssh appserver
+ssh appserver
+ssh appserver
+git branch
+ssh appserver
+ssh gateway
+ssh appserver
+cd ftask2/
+ls
+cd ansible/
+ls
+cd ../source/
+ls
+cd ../ansible/
+ls
+clear
+ls
+ssh appserver
+ssh gateway
+ssh appserver
+ssh appserver
+clear
+ssh appserver
+cd .ssh
+cat config 
+clear
+ssh config
+cls
+clear
+ssh appserver
+clear
+cd .ssh
+cat config 
+ssh appserver
+cd
+cd ftask2/ansible/
+ls
+cat 34firewall-install.yml 
+ansible-playbook 34firewall-install.yml 
+ssh appserver
+docker compose down
+ssh appserver
+ssh gateway
+ssh appserver
+du -h
+df -h
+cd .ssh
+cat id_rsa
+cd
+cd ftask2/ansible/
+ls
+cat 34firewall-install.yml 
+cd ../source/
+cat reverse-proxy.conf 
+cd ../ansible/
+ls
+cat 32obtain-ssl.yml 
+ls
+cat 21docker-install.yml 22nodexp-install.yml 24prom-install.yml 25graf-install.yml 
+ansible-playbook 21docker-install.yml 22nodexp-install.yml 24prom-install.yml 25graf-install.yml 
+CLEAR
+clear
+ls
+cat ansible.cfg 
+cd ../source/
+cat Inventory 
+cd ../ansible/
+ls
+cat 1attachssh.yml 
+ssh appserver
+ssh gateway
+cd ftask2/ansible/
+ls
+cd
+cd .ssh/
+cat config 
+cd ../ftask2/ansible/
+ls
+cat 34firewall-install.yml 
+ls
+cd
+cd .ssh
+ls
+cat config 
+cd
+cd ftask2/ansible/
+ls
+cat 34firewall-install.yml 
+ssh gateway
+ls
+cat 1attachssh.yml 
+cat 32obtain-ssl.yml 
+cd 
+cd .ssh/
+cat config 
+ls
+cd
+ssh appserver
+df -h
+neofetch
+docker ps -a
+clear
+ssh gateway
+docker ps -a
+ssh appserver
+ssh gateway
+ssh appserver
+ssh appserver
+ls
+cd ftask2/
+ls
+clear
+ls
+cd ansible/
+ls
+cat 25graf-install.yml 
+ls
+cat 22nodexp-install.yml 
+cat 24prom-install.yml 
+ssh appserver
+ssh gateway
+cd .ssh/
+cat id_rsa.pub 
+sudo apt-get update -y
+sudo apt-get install apt-transport-https ca-certificates gnupg curl sudo
+echo "deb [signed-by=/usr/share/keyrings/cloud.google.asc] https://packages.cloud.google.com/apt cloud-sdk main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key --keyring /usr/share/keyrings/cloud.google.gpg add -
+sudo apt-get update && sudo apt-get install google-cloud-cli
+sudo apt-get update
+gcloud
+cd /etc/apt/
+ls
+cd sources.list.d/
+ls
+sudo rm google-cloud-sdk.list 
+sudo apt-get update
+sudo snap install
+cd
+gcloud
+sudo snap install google-cloud-cli --classic
+sudo snap install google-cloud-sdk --classic
+gcloud login
+gcloud auth login
+gcloud container clusters get-credentials autopilot-cluster-1 --region asia-southeast1 --project sapient-visitor-398015
+gcloud components install kubectl
+sudo gcloud components install kubectl
+echo "$(cat kubectl.sha256)  kubectl" | sha256sum --check
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+kubectl version --client
+gcloud container clusters get-credentials autopilot-cluster-1 --region asia-southeast1 --project sapient-visitor-398015
+gcloud components install gke-gcloud-auth-plugin
+gcloud init
+gcloud container clusters get-credentials autopilot-cluster-1 --region asia-southeast1 --project sapient-visitor-398015
+kubectl get no
+ssh appserver
+$ sudo docker run --privileged -d --restart=unless-stopped -p 80:80 -p 443:443 rancher/rancher
+curl https://releases.rancher.com/install-docker/19.03.sh | sh
+sudo usermod -aG docker $USER
+docker run -d --restart=unless-stopped -p 80:80 -p 443:443 -v /opt/rancher:/var/lib/rancher --privileged rancher/rancher:latest
+mkdir awskey
+cd awskey/
+nano webkey.pem
+ssh -i "webkey.pem" ubuntu@ec2-54-211-115-182.compute-1.amazonaws.com
+cd
+cd .ssh
+ls
+rm known_hosts 
+ls
+cd
+cd a
+cd awskey/
+ssh -i "webkey.pem" ubuntu@ec2-54-211-115-182.compute-1.amazonaws.com
+chmod 400 webkey.pem
+ssh -i "webkey.pem" ubuntu@ec2-54-211-115-182.compute-1.amazonaws.com
+LS
+ls
+neofetch
+sudo apt update
+sudo apt install awscli -y
+aws --version
+aws configure
+ls
+ll
+ls /.aws/
+ls /.aws
+cd /.aws
+ls /mnt/c/Users/Ditoihkamp/.aws/
+cat /mnt/c/Users/Ditoihkamp/.aws/config
+cat /mnt/c/Users/Ditoihkamp/.aws/credentials
+aws sts get-caller-identity
+aws ec2 describe-instance
+aws ec2 describe-instances
+cd awskey/
+ls
+nano tweendev2.pem 
+ssh -i tweendev2.pem ubuntu@52.207.222.25
+ls
+cd a
+cd awskey/
+ls
+nginx --version
+nginx --v
+ls
+cat we
+cat webkey.pem 
+ls
+nano tweendev.pe
+nano tweendev.pem
+ssh -i tweendev.pem ubuntu@fungsi dari ssh -i
+ssh -i tweendev.pem ubuntu@35.173.246.35
+ls
+ssh -i tweendev.pem ubuntu@35.173.246.35
+ls
+cat tweendev.pem 
+ssh -i "tweendev.pem" ubuntu@35.173.246.35
+chmod 600 tweendev.pem
+ssh -i "tweendev.pem" ubuntu@35.173.246.35
